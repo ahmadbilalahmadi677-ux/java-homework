@@ -1,0 +1,17 @@
+
+package even.or.odd.number;
+
+import java.util.Scanner;
+public class EvenOrOddNumber {
+
+    public static void main(String[] args) {
+       Scanner input =new Scanner(System.in);
+       
+        System.out.println("enter a number");
+        long number =input.nextLong();
+        if (number % 2==0)
+        System.out.println("the number is even");
+     else {System.out.println("the number is odd");
+            }}}
+
+// this programm is used to show even and odd number

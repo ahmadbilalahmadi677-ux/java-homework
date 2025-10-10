@@ -1,0 +1,18 @@
+
+package findingcurrenttime;
+
+public class FindingCurrentTime {
+
+    public static void main(String[] args) {
+long total_seconds_mili = System.currentTimeMillis();
+long total_seconds = total_seconds_mili/1000;
+long current_seconds = total_seconds%60;
+long total_minutes = (total_seconds/60)+30;
+long current_minutes = (total_minutes)%60;
+long total_hours = total_minutes/60;
+long current_hours = total_hours%24;
+        System.out.println((current_hours +(4))+":"+(current_minutes)+":" + current_seconds+":");
+    }
+    
+}
+//this program is used to find current time

@@ -1,0 +1,19 @@
+
+package subtruction.quiz;
+import java.util.Scanner;
+public class SubtructionQuiz {
+
+
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        int number1 = (int) (Math.random() * 10);
+        int number2 = (int) (Math.random() * 10);
+if (number1 >= number2) {
+    System.out.println("what is the result of " + number1 + "-" + number2 + "?");
+    int programresult = number1 - number2;
+    int userresult = input.nextInt();
+   if (programresult == userresult) 
+   {System.out.println("correct!");}
+   else {System.out.println("incorrect the correct answer is" + programresult);
+}
+}}}

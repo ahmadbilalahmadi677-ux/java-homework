@@ -1,0 +1,19 @@
+
+package area.by.using.scanner;
+
+import java.util.Scanner;
+public class AreaByUsingScanner {
+
+  
+    public static void main(String[] args) {
+       
+        System.out.println("enter a radius to compute area");
+       Scanner input =new Scanner(System.in);
+      
+       double radius = input.nextDouble();
+        double area = radius*radius*Math.PI;
+        System.out.println("area"+area);
+    }
+    
+}
+//this programm is using to enter a radius and compute area

@@ -1,0 +1,14 @@
+//thisprogramm is to compute the area of circle
+package area.of.circle;
+
+public class AreaOfCircle {
+
+    public static void main(String[] args) {
+       double radius;
+       radius =13;
+       double area =radius*radius*Math.PI;
+        System.out.println("the area of this circle is"  +area);
+               
+    }
+    
+}

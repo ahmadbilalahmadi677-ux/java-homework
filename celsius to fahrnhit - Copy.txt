@@ -1,0 +1,17 @@
+
+package celsius.convert.to.fahrnhit;
+import java.util.Scanner;
+
+public class CelsiusConvertToFahrnhit {
+
+    
+    public static void main(String[] args) {
+        System.out.println("enter celsius to convert to fahrnhit");
+        Scanner input= new Scanner(System.in);
+        double celsius =input.nextDouble();
+        double fahrnhit = (9/5d)*celsius+32;
+        System.out.println("degre of fahrnhit"  + fahrnhit);
+    }
+    
+}
+//this programm is used to convert ceisius to fahrnhit
