@@ -1,0 +1,20 @@
+
+package javaapplication33;
+
+import java.util.Scanner;
+public class JavaApplication33 {
+    public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+        int num1 = (int) (Math.random() * 10);
+        int num2 = (int) (Math.random() * 10);
+        int result = num1 + num2;
+        while(true){
+        System.out.println("what is the result of " + num1 + "+" + num2 + "= ?");
+      int userResult = input.nextInt();
+      if(userResult == result) {
+          System.out.println("your answer is correct");
+          break;
+      } else {System.out.println("your answer is wrong");
+    }}}}
+    
+
