@@ -1,0 +1,20 @@
+
+package find.the.number.of.year;
+
+import java.util.Scanner;
+
+ public class FindTheNumberOfYear {
+ public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+ System.out.println(" please enter the total minutes:");
+long minutes = input.nextLong();
+long days = minutes / 1440;
+long years = days / 365;
+long remaindays = days % 365;
+System.out.println("The " + minutes +" minuts " +" is approximately " +years +" years  and " + remaindays + " days");
+
+
+
+    }
+    
+}

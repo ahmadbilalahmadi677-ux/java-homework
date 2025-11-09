@@ -1,0 +1,13 @@
+package gmt;
+public class GMT {
+public static void main(String[] args) {
+long miliseconds = System.currentTimeMillis();
+long totalseconds = miliseconds/1000;
+long currentseconds = totalseconds%60;
+long totalminutes = totalseconds/60;
+long currentminutes = totalminutes%60;
+long totalhours = totalminutes/60;
+long currenthours = totalhours%24;
+System.out.println("The time in Afghanistan is now :" + (currenthours+4) + ":" + (currentminutes+30) + ":" + currentseconds);
+}
+}

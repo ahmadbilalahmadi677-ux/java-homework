@@ -1,0 +1,26 @@
+
+    package counting.monetary.units;
+    import java.util.Scanner;
+    public class CountingMonetaryUnits {
+    public static void main(String[] args) {
+System.out.println("please enter amount:");
+Scanner input = new Scanner(System.in);    
+double amount = input.nextDouble();
+int remaincents = (int)(amount * 100);
+int Dollars = remaincents / 100;
+ remaincents = remaincents % 100;
+ int quarters = remaincents / 25;
+ remaincents = remaincents % 25;
+ int dimes = remaincents / 10;
+ remaincents = remaincents % 10;
+ int nickels = remaincents / 5;
+ remaincents = remaincents % 5;
+ int pennies = remaincents;
+  System.out.println("Your amount " + amount + " consists of");
+  System.out.println(" " + Dollars + " dollars");
+  System.out.println(" " + quarters + " quarters ");
+  System.out.println(" " + dimes + " dimes");
+  System.out.println(" " + nickels + " nickels");
+  System.out.println(" " + pennies + " pennies");
+}
+}

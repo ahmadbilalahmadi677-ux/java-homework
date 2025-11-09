@@ -1,0 +1,27 @@
+
+package guessing.number;
+
+import java.util.Scanner;
+
+public class GuessingNumber {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+    int number = (int) (Math.random()*100);
+   
+        System.out.println("what is the number ?");
+        while(true) {
+        int userInput = input.nextInt();
+        if(userInput==number) {
+            System.out.println("your answer is correct!");
+            break;
+        } else if(userInput > number) {
+            System.out.println("Your answer is high");
+        } else if( userInput < number){
+     System.out.println("your answer is low");
+}
+}
+}
+}
+    
+

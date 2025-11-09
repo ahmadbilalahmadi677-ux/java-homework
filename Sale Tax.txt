@@ -1,0 +1,20 @@
+
+package sale.tax;
+
+import java.util.Scanner;
+
+public class SaleTax {
+
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        System.out.println("please enter the amount of purchase :");
+        double PurchaseAmount = input.nextDouble();
+        
+        double Tax = PurchaseAmount * 0.06;
+System.out.println("Sales tax is $" + (int)(Tax * 100) / 100.0 );
+        
+
+
+    }
+    
+}
