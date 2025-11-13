@@ -1,0 +1,25 @@
+
+package monthlypayment;
+import java.util.Scanner;
+public class MonthlyPayment {
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in); 
+    System.out.println("please enter the annual interest rate:");
+    double annualinterestrate = input.nextDouble();
+    
+    double monthlyinterestrate = annualinterestrate/1200;
+    
+    System.out.println("please enter the number of years:");
+    double numberOfYears = input.nextDouble();
+    
+    System.out.println("please enter the loanamount: ");
+    double loanamount = input.nextDouble();
+    
+    double monthlypayment = (monthlyinterestrate*loanamount)/(1-(1/Math.pow(1+monthlyinterestrate, numberOfYears*12)));
+    double Totalpayment = monthlypayment*numberOfYears*12;
+    System.out.println("the monthlypayment is:" + monthlypayment + "and the totalpayment is :" +Totalpayment);
+    
+    
+}
+    
+}
