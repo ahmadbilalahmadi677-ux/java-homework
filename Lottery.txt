@@ -1,0 +1,28 @@
+
+package lottery;
+
+import java.util.Scanner;
+
+public class Lottery {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int lottery = (int) (Math.random()*100);
+        int digit1 = lottery/10;
+        int digit2 = lottery%10;
+        System.out.println("please enter a number:");
+        int userinput = input.nextInt();
+        int udigit1 = userinput/10;
+        int udigit2 = userinput%10;
+        if(userinput==lottery){
+            System.out.println("you won 10000$");
+        }else if(udigit1==digit2 || udigit2 == digit1){
+            System.out.println("you won 3000$");
+        }else if((udigit1==digit1 ^ udigit1 == digit2)  || (udigit2==digit1 ^ udigit2 == digit2)){
+            System.out.println("you won 1000$");
+        }else{
+            System.out.println("you loss");
+        }
+    }
+    
+}
