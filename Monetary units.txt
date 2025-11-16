@@ -1,0 +1,2 @@
+if(dollars > 0) System.out.println(dollars + (dollars == 1 ? " dollar" : " dollars"));
+if(cents > 0) System.out.println(cents + (cents == 1 ? " cent" : " cents"));
