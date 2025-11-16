@@ -1,0 +1,19 @@
+
+package find.future.dates;
+
+import java.util.Scanner;
+
+public class FindFutureDates {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter today's day (0–6): ");
+        int day = input.nextInt();
+        System.out.print("Enter days elapsed: ");
+        int elapsed = input.nextInt();
+        int future = (day + elapsed) % 7;
+        System.out.println("Future day is: " + future);
+
+    }
+    
+}
